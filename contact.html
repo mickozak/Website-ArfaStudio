@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Arfa Studio - filmy oraz zdjęcia weselne.">
+    <meta name="Keywords" content="wesele, ślub, film, zdjęcia, studio, warszawa, lublin, biała podlaska">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css"/>
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/contact.css"/>
+</head>
+<body>
+
+<div class="wrapper animated fadeIn">
+
+    <!--START HEADER-->
+    <header>
+        <nav>
+            <div class="header-logo">
+                <a href="index.html"><img src="img/logo.jpg"/></a>
+                <a class="burger-nav"></a>
+            </div>
+            <ul class="header-menu">
+                <li><a href="index.html">home</a></li>
+                <li><a href="realizations.html">realizations</a></li>
+                <li><a href="#">offer</a></li>
+                <li><a href="#">reference</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="https://www.facebook.com/Arfa-Studio-822150971311422/"><img src="img/socialmedia/facebook.svg"/></a></li>
+                <li><a href="https://www.youtube.com/channel/UCWAAwbb1xoy6OvM8IMK8o5Q"><img src="img/socialmedia/youtube.svg"/></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--END HEADER-->
+
+    <!--START MAIN-->
+    <main>
+        <form class="ui form" method="post" action="/script/send_form.php" id="contact_form">
+            <div><label for="name">Imię i nazwisko:</label></div>
+            <div><input type="text" name="name" id="name" class="formField" /></div>
+            <div><label for="phone">Numer telefonu:</label></div>
+            <div><input type="text" name="phone" id="phone" class="formField" /></div>
+            <div><label for="email">Adres email:</label></div>
+            <div><input type="text" name="email" id="email" class="formField" /></div>
+            <div><label for="message">Treść wiadomości:</label></div>
+            <div><textarea name="message" id="message" class="formField" rows="4"></textarea></div>
+            <div><button class="ui button" id="sendBtn">Wyślij</button></div>
+        </form>
+    </main>
+    <!--END MAIN-->
+
+    <!--START FOOTER-->
+    <footer>
+        <p>© Copyright Arfa Studio. Powered by <a href="mailto:kozak_m@outlook.com">Michał Kozak</a>. </p>
+    </footer>
+    <!--END FOOTER-->
+
+</div>
+
+<script src="script/jquery.min.js"></script>
+<script src="script/owl.carousel.min.js"></script>
+<script src="script/script.js"></script>
+
+</body>
+</html>
