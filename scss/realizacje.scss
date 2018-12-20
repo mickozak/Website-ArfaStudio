@@ -1,0 +1,35 @@
+main {
+  grid-area: main;
+  grid-row: auto;
+  margin-top: 4%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  justify-content: center;
+  @media screen and (max-width: 790px) {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .main-video {
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding: 0 0 56.25% 0;
+
+    iframe, object, embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  }
+}
+
+
+
+

@@ -17,7 +17,7 @@ body {
       nav {
         display: flex;
         justify-content: center;
-        @media screen and (max-width: 790px) {
+        @media screen and (max-width: 830px) {
           flex-direction: column;
         }
         .header-logo {
@@ -26,10 +26,10 @@ body {
           align-items: center;
         }
         .burger-nav {
-          @media screen and (min-width: 790px) {
+          @media screen and (min-width: 830px) {
             display: none;
           }
-          @media screen and (max-width: 790px) {
+          @media screen and (max-width: 830px) {
             display: block;
             margin: 0;
             background: url("../img/menu.svg") no-repeat 98% center;
@@ -41,7 +41,7 @@ body {
         ul {
           display: flex;
           align-items: center;
-          @media screen and (max-width: 790px) {
+          @media screen and (max-width: 830px) {
             display: flex;
             flex-direction: column;
             width: 100%;
@@ -49,26 +49,27 @@ body {
             padding: 0;
             overflow: hidden;
             height: 0;
-
           }
           li {
             list-style: none;
             text-transform: uppercase;
-            width: 100%;
             margin: 0;
             padding: 0;
             border-bottom: 1px solid $color-black;
+            @media screen and (max-width: 830px) {
+              width: 100%;
+            }
+            &:nth-child(5){
+              border-bottom: none;
+            }
             &:nth-child(6){
               border-bottom: none;
             }
-            &:nth-child(7){
-              border-bottom: none;
-            }
-            @media screen and (max-width: 790px){
-              &:nth-child(6){
+            @media screen and (max-width: 830px){
+              &:nth-child(5){
                 border-bottom: 1px solid $color-black;
               }
-              &:nth-child(7){
+              &:nth-child(6){
                 border-bottom: 1px solid $color-black;
               }
             }
@@ -94,11 +95,37 @@ body {
     }
   }
   main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
     grid-area: main;
     grid-row: auto;
     margin-top: 4%;
     justify-self: center;
+    @media screen and(max-width: 830px){
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    }
+    .main-description{
+      grid-column: 2/3;
+      grid-row: 1/2;
+      @media screen and(max-width: 830px){
+      grid-column: auto;
+      grid-row: 1/2;
+    }
+      i{
+        font-size: 20px;
+        padding-right: 10px;
+      }
+    }
     form{
+      grid-column: 1/2;
+      grid-row: 1/2;
+      @media screen and(max-width: 830px){
+        grid-column: auto;
+        grid-row: 2/3;
+      }
       .formField{
         border: 1px solid $color-light-grey;
         border-radius: 2%;

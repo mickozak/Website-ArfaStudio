@@ -1,0 +1,32 @@
+@mixin title{
+  background-color: #f0f0f2;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin time{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d6d5dc;
+}
+
+@mixin description{
+  background-color: #f0f0f2;
+  ul{
+    text-align: center;
+    li{
+      list-style: none;
+      text-transform: uppercase;
+      margin: 5px;
+    }
+  }
+}
+
+@mixin price{
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  background-color: #d6d5dc;
+}

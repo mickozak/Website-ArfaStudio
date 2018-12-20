@@ -1,0 +1,15 @@
+.main {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: auto; }
+  @media screen and (max-width: 830px) {
+    .main {
+      grid-template-columns: 5% 90% 5%; } }
+  .main .main_container {
+    grid-column: 2/3;
+    grid-row: auto; }
+    .main .main_container .main_container_item {
+      margin: 10px;
+      text-align: justify; }
+
+/*# sourceMappingURL=o_nas.css.map */

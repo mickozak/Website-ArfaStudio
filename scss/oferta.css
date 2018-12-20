@@ -1,0 +1,121 @@
+.main {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: auto; }
+  @media screen and (max-width: 830px) {
+    .main {
+      grid-template-columns: 5% 90% 5%; } }
+  .main .main_container {
+    grid-column: 2/3;
+    grid-row: auto; }
+    .main .main_container .main_container_description .main_container_description-item {
+      margin: 10px;
+      text-align: justify; }
+  .main .main_container_content {
+    grid-column: 2/3;
+    grid-row: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px; }
+    @media screen and (max-width: 830px) {
+      .main .main_container_content {
+        grid-template-columns: auto; } }
+    .main .main_container_content .main_container_content-idealny {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto; }
+      .main .main_container_content .main_container_content-idealny .main_container_content-idealny-title {
+        background-color: #f0f0f2;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center; }
+      .main .main_container_content .main_container_content-idealny .main_container_content-idealny-time {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #d6d5dc; }
+        .main .main_container_content .main_container_content-idealny .main_container_content-idealny-time .main_container_content-idealny-time-itemOne {
+          font-size: 5em;
+          margin: 0; }
+        .main .main_container_content .main_container_content-idealny .main_container_content-idealny-time .main_container_content-idealny-time-itemTwo {
+          margin: 0 0 10px 0; }
+      .main .main_container_content .main_container_content-idealny .main_container_content-idealny-description {
+        background-color: #f0f0f2; }
+        .main .main_container_content .main_container_content-idealny .main_container_content-idealny-description ul {
+          text-align: center; }
+          .main .main_container_content .main_container_content-idealny .main_container_content-idealny-description ul li {
+            list-style: none;
+            text-transform: uppercase;
+            margin: 5px; }
+      .main .main_container_content .main_container_content-idealny .main_container_content-idealny-price {
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        background-color: #d6d5dc; }
+    .main .main_container_content .main_container_content-wyjatkowy {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto; }
+      .main .main_container_content .main_container_content-wyjatkowy .main_container_content-wyjatkowy-title {
+        background-color: #f0f0f2;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center; }
+      .main .main_container_content .main_container_content-wyjatkowy .main_container_content-wyjatkowy-time {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #d6d5dc; }
+        .main .main_container_content .main_container_content-wyjatkowy .main_container_content-wyjatkowy-time .main_container_content-wyjatkowy-time-itemOne {
+          font-size: 5em;
+          margin: 0; }
+        .main .main_container_content .main_container_content-wyjatkowy .main_container_content-wyjatkowy-time .main_container_content-wyjatkowy-time-itemTwo {
+          margin: 0 0 10px 0; }
+      .main .main_container_content .main_container_content-wyjatkowy .main_container_content-wyjatkowy-description {
+        background-color: #f0f0f2; }
+        .main .main_container_content .main_container_content-wyjatkowy .main_container_content-wyjatkowy-description ul {
+          text-align: center; }
+          .main .main_container_content .main_container_content-wyjatkowy .main_container_content-wyjatkowy-description ul li {
+            list-style: none;
+            text-transform: uppercase;
+            margin: 5px; }
+      .main .main_container_content .main_container_content-wyjatkowy .main_container_content-wyjatkowy-price {
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        background-color: #d6d5dc; }
+    .main .main_container_content .main_container_content-platynowy {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto; }
+      .main .main_container_content .main_container_content-platynowy .main_container_content-platynowy-title {
+        background-color: #f0f0f2;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center; }
+      .main .main_container_content .main_container_content-platynowy .main_container_content-platynowy-time {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #d6d5dc; }
+        .main .main_container_content .main_container_content-platynowy .main_container_content-platynowy-time .main_container_content-platynowy-time-itemOne {
+          font-size: 5em;
+          margin: 0; }
+        .main .main_container_content .main_container_content-platynowy .main_container_content-platynowy-time .main_container_content-platynowy-time-itemTwo {
+          margin: 0 0 10px 0; }
+      .main .main_container_content .main_container_content-platynowy .main_container_content-platynowy-description {
+        background-color: #f0f0f2; }
+        .main .main_container_content .main_container_content-platynowy .main_container_content-platynowy-description ul {
+          text-align: center; }
+          .main .main_container_content .main_container_content-platynowy .main_container_content-platynowy-description ul li {
+            list-style: none;
+            text-transform: uppercase;
+            margin: 5px; }
+      .main .main_container_content .main_container_content-platynowy .main_container_content-platynowy-price {
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        background-color: #d6d5dc; }
+
+/*# sourceMappingURL=oferta.css.map */
